@@ -27,5 +27,6 @@ steps:
 - task: CopyPublishBuildArtifacts@1
   inputs:
     CopyRoot: '$(build.artifactstagingdirectory)'
+    Contents: '**/*.war'
     ArtifactName: 'warfile'
     ArtifactType: 'Container'
